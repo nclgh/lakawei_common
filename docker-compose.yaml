@@ -1,0 +1,24 @@
+version: "2"
+
+services:
+  redis:
+    container_name: redis
+    image: docker.io/redis
+    ports:
+     - 6379:6379
+    command: redis-server
+    volumes:
+     - /container_data/redis/data:/data
+  mysql:
+    container_name: mysql
+    image: mysql:5.7.23
+    ports:
+     - 3306:3306
+    command:
+     --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+     - /container_data/mysql/mysql:/var/lib/mysql
+    environment:
+     MYSQL_DATABASE: aliyun_server
+     MYSQL_USER: root
+     MYSQL_ROOT_PASSWORD: aliyun_mysql
