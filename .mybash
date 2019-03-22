@@ -1,0 +1,15 @@
+# golang
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=$PATH:/usr/local/nginx/sbin
+# LuaJT
+export LUAJIT_LIB=/usr/local/lib
+export LUAJIT_INC=/usr/local/include/luajit-2.0
+
+# alias
+alias ngxreload='nginx -c ~/go/src/github.com/nclgh/lakawei_common/nginx/conf/nginx.conf -s reload'
+alias ngxlog='vim /usr/local/nginx/logs/error.log'
+alias lredis='redis-cli -h 127.0.0.1 -p '
+alias nclgh='cd ~/go/src/github.com/nclgh'
+alias dc='docker-compose'
