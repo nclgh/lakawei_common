@@ -1,0 +1,3 @@
+passportServiceName: "ServicePassport"
+
+passportRedisAddr: "39.108.71.247:6379"
