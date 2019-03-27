@@ -1,3 +1,11 @@
-passportServiceName: "ServicePassport"
+# mysql
+lakaweiMysqlAddr: "root:aliyun_mysql@tcp(39.108.71.247:3306)/aliyun_server?charset=utf8&parseTime=True&loc=Local"
 
+# rpc service
+passportServiceName: "ServicePassport"
+memberServiceName: "ServiceMember"
+deviceServiceName: "ServiceDevice"
+
+
+# redis
 passportRedisAddr: "39.108.71.247:6379"
